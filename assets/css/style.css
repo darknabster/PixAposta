@@ -1,0 +1,862 @@
+
+    :root {
+  --green: #075d3e;
+  --green-2: #16a000;
+  --lime: #b9df39;
+  --orange: #ff6b19;
+  --ink: #242424;
+  --muted: #666;
+  --bg: #f3f3f3;
+  --card: #fff;
+  --line: #ddd;
+  --radius: 14px;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  line-height: 1.45;
+}
+a {
+  color: inherit;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+.site {
+  width: min(100%, 520px);
+  margin: auto;
+  background: #fff;
+  min-height: 100vh;
+  box-shadow: 0 0 28px #0001;
+}
+.topbar {
+  background: #242424;
+  color: #fff;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 12px;
+  font-size: 11px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+.brand-logo {
+  display: block;
+  width: auto;
+  max-width: min(210px, calc(100vw - 70px));
+  height: auto;
+  max-height: 42px;
+  object-fit: contain;
+}
+.menu {
+  font-size: 23px;
+  color: #b9df39;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 5px 6px;
+  border-radius: 6px;
+  line-height: 1;
+  flex: 0 0 auto;
+}
+.menu:focus-visible {
+  outline: 2px solid #b9df39;
+  outline-offset: 2px;
+}
+.menu-panel {
+  display: none;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 4px 10px #0002;
+  padding: 6px 10px;
+}
+.menu-panel.open {
+  display: block;
+}
+.menu-panel a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+  color: #242424;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 8px;
+  border-radius: 8px;
+}
+.menu-panel a:hover,
+.menu-panel a:focus-visible {
+  background: #eef8e9;
+  color: #075d3e;
+}
+.menu-panel a:focus-visible {
+  outline: 2px solid #16a000;
+  outline-offset: 1px;
+}
+.menu-icon,
+.nav-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 18px;
+}
+.menu-icon svg,
+.nav-icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+.nav {
+  background: var(--green);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  gap: 2px;
+  padding: 7px 5px;
+  font-size: 9px;
+}
+.nav a {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 4px 2px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 7px;
+  white-space: nowrap;
+}
+.nav a.active,
+.nav a:hover,
+.nav a:focus-visible {
+  color: #f5d900;
+}
+.nav a:focus-visible {
+  outline: 2px solid #f5d900;
+  outline-offset: 1px;
+}
+.nav-label {
+  display: inline-block;
+}
+.hero {
+  padding: 8px;
+  background: linear-gradient(135deg, #1b8b54, #b9df39);
+}
+.hero-banner {
+  min-height: 95px;
+  border-radius: 16px;
+  background: radial-gradient(circle at 80% 20%, #ffd26a 0 9%, transparent 10%),
+    linear-gradient(120deg, #174d37, #7b4b22 55%, #e5a54a);
+  color: #fff;
+  padding: 16px 12px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-banner:after {
+  content: "🎁";
+  position: absolute;
+  right: 12px;
+  bottom: 2px;
+  font-size: 68px;
+  filter: drop-shadow(0 3px 2px #0005);
+}
+.hero-banner h1 {
+  font-size: 17px;
+  line-height: 1.05;
+  margin: 0 0 6px;
+  max-width: 55%;
+  text-transform: uppercase;
+}
+.hero-banner strong {
+  color: #eaff3b;
+  font-size: 25px;
+  display: block;
+}
+.hero-banner small {
+  font-size: 9px;
+}
+.featured {
+  background: linear-gradient(135deg, #0d804d, #79b72b);
+  padding: 12px 9px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+}
+.feature {
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 5px;
+  text-align: center;
+  box-shadow: 0 2px 0 #0002;
+}
+.app-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 5px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #0b5b39, #1aa600);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  border: 3px solid #f4d94a;
+  box-shadow: inset 0 0 0 2px #fff5;
+}
+.feature h2 {
+  font-size: 11px;
+  margin: 2px 0;
+}
+.stars {
+  color: #f5a400;
+  font-size: 10px;
+}
+.btn {
+  display: inline-block;
+  background: var(--orange);
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-size: 9px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.tabs {
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.tabs button {
+  flex: 1;
+  text-align: center;
+  padding: 10px 3px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  font: inherit;
+  font-size: 10px;
+  color: #999;
+  cursor: pointer;
+}
+.tabs button.active {
+  color: #0787ff;
+  border-bottom-color: #0787ff;
+  font-weight: 800;
+}
+.tabs button:focus-visible {
+  outline: 2px solid #0787ff;
+  outline-offset: -2px;
+}
+.empty-state {
+  font-size: 11px;
+  color: #777;
+  text-align: center;
+  padding: 24px 8px;
+}
+.list {
+  padding: 7px 8px;
+}
+.app-card {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--card);
+  border: 1px solid #d6d6d6;
+  border-radius: 14px;
+  padding: 8px 10px;
+  margin: 0 0 8px;
+  box-shadow: 0 2px 4px #0002;
+  min-height: 67px;
+}
+.app-card .app-icon {
+  flex: 0 0 43px;
+  width: 43px;
+  height: 43px;
+  margin: 0;
+  font-size: 11px;
+  border-width: 2px;
+}
+.app-info {
+  min-width: 0;
+  flex: 1;
+}
+.app-name {
+  font-size: 11px;
+  font-weight: 800;
+  margin: 0;
+}
+.app-sub {
+  font-size: 9px;
+  color: #777;
+  margin: 1px 0;
+}
+.recommend {
+  font-size: 9px;
+  color: #0caa20;
+  font-weight: 700;
+}
+.app-card .btn {
+  background: #08a600;
+  border-radius: 20px;
+  font-size: 8px;
+  padding: 7px 12px;
+  white-space: nowrap;
+}
+.content {
+  padding: 0 10px 20px;
+}
+.content h2 {
+  color: #12a300;
+  font-size: 15px;
+  margin: 10px 0 5px;
+}
+.content h3 {
+  font-size: 12px;
+  margin: 13px 0 4px;
+}
+.content p,
+.content li {
+  font-size: 10px;
+  color: #444;
+}
+.content ul {
+  padding-left: 18px;
+  margin-top: 5px;
+}
+.footer {
+  background: #075d3e;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  padding: 15px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+@media (min-width: 700px) {
+  body {
+    padding: 20px;
+  }
+  .site {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .hero-banner {
+    min-height: 150px;
+    padding: 25px;
+  }
+  .hero-banner h1 {
+    font-size: 24px;
+  }
+  .hero-banner strong {
+    font-size: 36px;
+  }
+  .hero-banner:after {
+    font-size: 110px;
+  }
+  .content p,
+  .content li {
+    font-size: 12px;
+  }
+  .app-card {
+    min-height: 76px;
+  }
+  .app-name {
+    font-size: 13px;
+  }
+  .app-sub,
+  .recommend {
+    font-size: 10px;
+  }
+}
+
+    /* ========================================
+   TOP 3 RANKING SECTION
+======================================== */
+
+.top3-ranking {
+  position: relative;
+  width: 100%;
+  min-height: 315px;
+  overflow: hidden;
+
+  /* Green/yellow base similar to reference */
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(185, 223, 57, 0.35),
+      transparent 55%
+    ),
+    linear-gradient(
+      135deg,
+      #075d3e 0%,
+      #0b8143 45%,
+      #179c32 100%
+    );
+
+  padding: 10px 10px 5px;
+}
+
+
+/* ----------------------------------------
+   BACKGROUND IMAGE
+   Replace ranking-background.jpg
+   with your own artwork
+----------------------------------------- */
+
+.ranking-bg {
+  position: absolute;
+  inset: 0;
+
+  background-image: url("/assets/images/ranking-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /*
+    Keeps the background visible while
+    allowing the ranking cards to stand out.
+  */
+  z-index: 0;
+}
+
+
+/* Optional subtle green overlay */
+
+.ranking-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 100, 45, 0.20),
+      rgba(20, 150, 45, 0.05),
+      rgba(0, 100, 45, 0.20)
+    );
+}
+
+
+/* ----------------------------------------
+   RANKING CONTENT
+----------------------------------------- */
+
+.ranking-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
+  display: grid;
+
+  /*
+    Center card is wider.
+  */
+  grid-template-columns:
+    1fr
+    1.12fr
+    1fr;
+
+  align-items: end;
+
+  gap: 9px;
+
+  min-height: 300px;
+}
+
+
+/* ----------------------------------------
+   CARD BASE
+----------------------------------------- */
+
+.rank-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /*
+    Transparent white gradient,
+    matching the reference.
+  */
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.94) 0%,
+      rgba(255, 255, 255, 0.76) 45%,
+      rgba(255, 255, 255, 0.34) 100%
+    );
+
+  border-radius: 18px 18px 22px 22px;
+
+  padding: 14px 8px 44px;
+
+  box-shadow:
+    0 5px 12px rgba(0, 0, 0, 0.20),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+
+  backdrop-filter: blur(2px);
+
+  min-width: 0;
+}
+
+
+/* ----------------------------------------
+   DIFFERENT CARD HEIGHTS
+----------------------------------------- */
+
+/* #2 */
+.rank-2 {
+  min-height: 205px;
+}
+
+/* #1 — BIGGER + LONGER */
+.rank-1 {
+  min-height: 255px;
+
+  padding-top: 17px;
+
+  border-radius: 20px 20px 24px 24px;
+
+  /*
+    Slightly stronger highlight for #1
+  */
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.97) 0%,
+      rgba(255, 255, 255, 0.80) 45%,
+      rgba(255, 255, 255, 0.38) 100%
+    );
+
+  box-shadow:
+    0 7px 16px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+/* #3 */
+.rank-3 {
+  min-height: 205px;
+}
+
+
+/* ----------------------------------------
+   PLATFORM LOGO
+----------------------------------------- */
+
+.platform-logo {
+  width: 76px;
+  height: 76px;
+
+  border-radius: 18px;
+
+  padding: 4px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f7e94b,
+      #fff36b,
+      #d5bd16
+    );
+
+  border: 2px solid #e8dc38;
+
+  box-shadow:
+    0 3px 7px rgba(0, 0, 0, 0.28),
+    inset 0 0 0 3px rgba(0, 90, 35, 0.55);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+
+/* #1 logo is larger */
+
+.rank-1 .platform-logo {
+  width: 88px;
+  height: 88px;
+
+  border-radius: 20px;
+}
+
+
+/* Actual logo image */
+
+.platform-logo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+  border-radius: 13px;
+}
+
+
+/* ----------------------------------------
+   PLATFORM NAME
+----------------------------------------- */
+
+.platform-name {
+  margin-top: 5px;
+
+  font-size: 17px;
+  line-height: 1;
+
+  font-weight: 500;
+
+  color: #111;
+
+  text-align: center;
+}
+
+
+/* #1 platform name */
+
+.rank-1 .platform-name {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+
+/* ----------------------------------------
+   STARS
+----------------------------------------- */
+
+.stars {
+  margin-top: 7px;
+
+  color: #e4ad24;
+
+  font-size: 15px;
+
+  line-height: 1;
+
+  letter-spacing: 1px;
+
+  text-shadow:
+    0 1px 1px rgba(120, 75, 0, 0.25);
+}
+
+
+/* #1 stars */
+
+.rank-1 .stars {
+  font-size: 18px;
+  margin-top: 9px;
+}
+
+
+/* ----------------------------------------
+   REGISTER BUTTON
+----------------------------------------- */
+
+.rank-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  max-width: 108px;
+
+  min-height: 28px;
+
+  margin-top: 8px;
+
+  border-radius: 6px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ff5b16 0%,
+      #f33d08 100%
+    );
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.2px;
+
+  box-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.18);
+
+  transition:
+    transform 0.15s ease,
+    filter 0.15s ease;
+}
+
+
+.rank-button:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+
+/* #1 button */
+
+.rank-1 .rank-button {
+  max-width: 115px;
+  min-height: 30px;
+  font-size: 9px;
+}
+
+
+/* ----------------------------------------
+   MEDAL / RANKING BADGE
+----------------------------------------- */
+
+.rank-medal {
+  position: absolute;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  bottom: -18px;
+
+  width: 66px;
+  height: 66px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 5;
+}
+
+
+.rank-medal img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+  filter:
+    drop-shadow(0 4px 3px rgba(0,0,0,0.28));
+}
+
+
+/* #1 medal is slightly larger */
+
+.rank-1 .rank-medal {
+  width: 75px;
+  height: 75px;
+
+  bottom: -20px;
+}
+
+
+/* ----------------------------------------
+   MOBILE
+----------------------------------------- */
+
+@media (max-width: 380px) {
+
+  .top3-ranking {
+    min-height: 285px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .ranking-content {
+    gap: 6px;
+    min-height: 270px;
+  }
+
+  .rank-card {
+    min-height: 185px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .rank-1 {
+    min-height: 230px;
+  }
+
+  .platform-logo {
+    width: 62px;
+    height: 62px;
+  }
+
+  .rank-1 .platform-logo {
+    width: 72px;
+    height: 72px;
+  }
+
+  .platform-name {
+    font-size: 14px;
+  }
+
+  .rank-1 .platform-name {
+    font-size: 17px;
+  }
+
+  .stars {
+    font-size: 12px;
+  }
+
+  .rank-1 .stars {
+    font-size: 14px;
+  }
+
+  .rank-button {
+    max-width: 95px;
+    font-size: 8px;
+  }
+
+  .rank-medal {
+    width: 55px;
+    height: 55px;
+  }
+
+  .rank-1 .rank-medal {
+    width: 63px;
+    height: 63px;
+  }
+}
