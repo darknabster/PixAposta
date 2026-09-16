@@ -47,9 +47,174 @@
         </nav>
     </header>
     <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-banner">
-            <img src="./assets/images/banner-slider1.png" alt="Banner de destaque">
+
+        <div
+            class="hero-slider"
+            id="hero-slider"
+            aria-roledescription="carousel"
+            aria-label="Banners em destaque"
+        >
+
+            <div class="hero-slides">
+
+                <article
+                    class="hero-slide active"
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label="1 de 5"
+                >
+                    <img
+                        src="./assets/images/banners/banner-slider1.webp"
+                        alt="Pix Aposta Brasil - Banner em destaque"
+                        width="1200"
+                        height="600"
+                        fetchpriority="high"
+                        decoding="async"
+                    >
+                </article>
+
+                <article
+                    class="hero-slide"
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label="2 de 5"
+                    aria-hidden="true"
+                >
+                    <img
+                        src="./assets/images/banners/banner-slider2.webp"
+                        alt="Pix Aposta Brasil - Ofertas e novidades"
+                        width="1200"
+                        height="600"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </article>
+
+                <article
+                    class="hero-slide"
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label="3 de 5"
+                    aria-hidden="true"
+                >
+                    <img
+                        src="./assets/images/banners/banner-slider3.webp"
+                        alt="Pix Aposta Brasil - Plataformas em destaque"
+                        width="1200"
+                        height="600"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </article>
+
+                <!-- <article
+                    class="hero-slide"
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label="4 de 5"
+                    aria-hidden="true"
+                >
+                    <img
+                        src="./assets/images/banners/banner-slider4.webp"
+                        alt="Pix Aposta Brasil - Promoções especiais"
+                        width="1200"
+                        height="600"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </article>
+
+                <article
+                    class="hero-slide"
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label="5 de 5"
+                    aria-hidden="true"
+                >
+                    <img
+                        src="./assets/images/banners/banner-slider5.webp"
+                        alt="Pix Aposta Brasil - Novos aplicativos"
+                        width="1200"
+                        height="600"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </article> -->
+
+            </div>
+
+            <!-- Previous -->
+            <button
+                class="hero-arrow hero-prev"
+                type="button"
+                aria-label="Banner anterior"
+            >
+                ‹
+            </button>
+
+            <!-- Next -->
+            <button
+                class="hero-arrow hero-next"
+                type="button"
+                aria-label="Próximo banner"
+            >
+                ›
+            </button>
+
+            <!-- Indicators -->
+            <div
+                class="hero-dots"
+                role="tablist"
+                aria-label="Selecionar banner"
+            >
+                <button
+                    class="hero-dot active"
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                    aria-label="Ir para o banner 1"
+                    data-slide="0"
+                ></button>
+
+                <button
+                    class="hero-dot"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-label="Ir para o banner 2"
+                    data-slide="1"
+                ></button>
+
+                <button
+                    class="hero-dot"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-label="Ir para o banner 3"
+                    data-slide="2"
+                ></button>
+
+                <button
+                    class="hero-dot"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-label="Ir para o banner 4"
+                    data-slide="3"
+                ></button>
+
+                <button
+                    class="hero-dot"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-label="Ir para o banner 5"
+                    data-slide="4"
+                ></button>
+            </div>
+
         </div>
+
     </section>
     <!-- =========================
      TOP 3 PLATFORM RANKING
