@@ -2,35 +2,35 @@ const categories = {
     hot: [
         {
             name: '5BBB',
-            icon: './assets/images/apps/5bbb.png',
+            icon: './assets/images/apps/5BBB.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: 'BB22',
-            icon: './assets/images/apps/bb22.png',
+            icon: './assets/images/apps/BB22.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: '77BB',
-            icon: './assets/images/apps/77bb.png',
+            icon: './assets/images/apps/77BB.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: '66AA',
-            icon: './assets/images/apps/66aa.png',
+            icon: './assets/images/apps/66AA.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: 'XXX7',
-            icon: './assets/images/apps/xxx7.png',
+            icon: './assets/images/apps/XXX7.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
@@ -38,35 +38,35 @@ const categories = {
 
         {
             name: '77GG',
-            icon: './assets/images/apps/77gg.png',
+            icon: './assets/images/apps/77GG.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: '11CC',
-            icon: './assets/images/apps/11cc.png',
+            icon: './assets/images/apps/11CC.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: 'RR66',
-            icon: './assets/images/apps/rr66.png',
+            icon: './assets/images/apps/RR66.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: '33CC',
-            icon: './assets/images/apps/33cc.png',
+            icon: './assets/images/apps/33CC.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: 'XX11',
-            icon: './assets/images/apps/xx11.png',
+            icon: './assets/images/apps/XX11.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
@@ -74,35 +74,35 @@ const categories = {
 
         {
             name: '33NN',
-            icon: './assets/images/apps/33nn.png',
+            icon: './assets/images/apps/33NN.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: '44WW',
-            icon: './assets/images/apps/44ww.png',
+            icon: './assets/images/apps/44WW.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: '55UU',
-            icon: './assets/images/apps/55uu.png',
+            icon: './assets/images/apps/55UU.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: '77SS',
-            icon: './assets/images/apps/77ss.png',
+            icon: './assets/images/apps/77SS.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: 'EE44',
-            icon: './assets/images/apps/ee44.png',
+            icon: './assets/images/apps/EE44.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
@@ -110,35 +110,35 @@ const categories = {
 
         {
             name: '7JJJ',
-            icon: './assets/images/apps/7jjj.png',
+            icon: './assets/images/apps/7JJJ.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: 'KK44',
-            icon: './assets/images/apps/kk44.png',
+            icon: './assets/images/apps/KK44.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: '22CC',
-            icon: './assets/images/apps/22cc.png',
+            icon: './assets/images/apps/22CC.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: '99SS',
-            icon: './assets/images/apps/99ss.png',
+            icon: './assets/images/apps/99SS.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
         },
         {
             name: 'WW33',
-            icon: './assets/images/apps/ww33.png',
+            icon: './assets/images/apps/WW33.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
             url: '#contato'
@@ -148,35 +148,35 @@ const categories = {
     new: [
         {
             name: '73J',
-            icon: './assets/images/apps/73j.png',
+            icon: './assets/images/apps/73J.png',
             description: 'Bônus de até 7%',
             sub: 'no depósito',
             url: '#contato'
         },
         {
             name: '23E',
-            icon: './assets/images/apps/23e.png',
+            icon: './assets/images/apps/23E.png',
             description: 'Bônus de 5%',
             sub: 'no primeiro depósito',
             url: '#contato'
         },
         {
             name: '23A',
-            icon: './assets/images/apps/23a.png',
+            icon: './assets/images/apps/23A.png',
             description: 'Bônus de 5%',
             sub: 'no primeiro depósito',
             url: '#contato'
         },
         {
             name: 'NN22',
-            icon: './assets/images/apps/nn22.png',
+            icon: './assets/images/apps/NN22.png',
             description: '777 extra',
             sub: 'no primeiro depósito',
             url: '#contato'
         },
         {
             name: '76B',
-            icon: './assets/images/apps/76b.png',
+            icon: './assets/images/apps/76B.png',
             description: 'Bônus de 7%',
             sub: 'no depósito',
             url: '#contato'
