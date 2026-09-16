@@ -3,13 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pix Aposta Brasil — Melhores Plataformas de Jogos e Bônus</title>
-    <meta name="description" content="Encontre plataformas brasileiras de jogos, bônus de cadastro e aplicativos recomendados. Confira opções populares e informações sobre jogos online.">
+    <title>Pixaposta Brasil — Aplicativos de Jogos, Plataformas e Ofertas</title>
+    <meta name="description" content="Confira aplicativos de jogos e plataformas populares no Brasil. Explore novidades, ofertas e informações sobre cada aplicativo.">
     <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="author" content="Pixaposta Brasil">
+    <meta name="format-detection" content="telephone=no">
     <link rel="canonical" href="https://example.com/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:title" content="Pix Aposta Brasil — Melhores Plataformas de Jogos e Bônus">
+    <meta property="og:title" content="Pixaposta Brasil — Aplicativos de Jogos, Plataformas e Ofertas">
     <meta property="og:description" content="Explore plataformas brasileiras de jogos, bônus e aplicativos recomendados.">
     <meta name="theme-color" content="#075d3e">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -148,104 +150,6 @@
     </section>
     <footer class="footer">© 2026 Pixaposta Brasil · Conteúdo informativo · Jogue com responsabilidade</footer>
     </main>
-    <script>
-    const categories = {
-        hot: [
-        ['5BBB','App recomendado'],['BB22','App recomendado'],['7BB','App recomendado'],['66AA','App recomendado'],['XXX7','App recomendado'],
-        ['77GG','App recomendado'],['11CC','App recomendado'],['RR66','App recomendado'],['33CC','App recomendado'],['XX11','App recomendado'],
-        ['33NN','App recomendado'],['44WW','App recomendado'],['55UU','App recomendado'],['77SS','App recomendado'],['EE44','App recomendado'],
-        ['7JJJ','App recomendado'],['KK44','App recomendado'],['22CC','App recomendado'],['99SS','App recomendado'],['WW33','App recomendado']
-        ],
-        new: [
-        ['NOVA 5','Novo aplicativo'],['BR7','Novo aplicativo'],['PIX99','Novo aplicativo'],['WIN22','Novo aplicativo'],['TOP33','Novo aplicativo']
-        ],
-        promo: [
-        ['5BBB','Bônus de cadastro'],['66AA','Oferta promocional'],['7BB','Oferta promocional'],['77GG','Bônus especial'],['WW33','Oferta promocional']
-        ]
-    };
-
-    const menuToggle = document.getElementById('menu-toggle');
-    const siteMenu = document.getElementById('site-menu');
-
-    function closeMenu() {
-        siteMenu.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        menuToggle.setAttribute('aria-label', 'Abrir menu');
-        menuToggle.textContent = '☰';
-    }
-
-    menuToggle.addEventListener('click', () => {
-        const isOpen = siteMenu.classList.toggle('open');
-        menuToggle.setAttribute('aria-expanded', String(isOpen));
-        menuToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
-        menuToggle.textContent = isOpen ? '✕' : '☰';
-    });
-
-    siteMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-
-    const mainNavLinks = [...document.querySelectorAll('.nav a')];
-    mainNavLinks.forEach(link => {
-        link.addEventListener('click', () => {
-        mainNavLinks.forEach(item => {
-            item.classList.toggle('active', item === link);
-            item.toggleAttribute('aria-current', item === link);
-        });
-        });
-    });
-
-    const appList = document.getElementById('app-list');
-    const appsSection = document.getElementById('apps');
-    const title = document.getElementById('apps-title');
-    const emptyState = document.getElementById('empty-state');
-    const tabs = [...document.querySelectorAll('[data-category]')];
-
-    function renderCategory(category) {
-        const apps = categories[category] || [];
-        const labels = { hot: 'Aplicativos em alta', new: 'Novos aplicativos', promo: 'Aplicativos em promoção' };
-        title.textContent = labels[category];
-        appList.replaceChildren();
-        emptyState.hidden = apps.length > 0;
-
-        apps.forEach(([name, label]) => {
-        const card = document.createElement('article');
-        card.className = 'app-card';
-        card.innerHTML = `
-            <div class="app-icon" aria-hidden="true">${name}</div>
-            <div class="app-info">
-            <p class="app-name">${name}</p>
-            <p class="app-sub">Saque rápido</p>
-            <p class="recommend">${label}</p>
-            </div>
-            <a class="btn" href="#contato" aria-label="Registrar em ${name}">Registrar</a>`;
-        appList.appendChild(card);
-        });
-    }
-
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-        const category = tab.dataset.category;
-        tabs.forEach(item => {
-            const selected = item === tab;
-            item.classList.toggle('active', selected);
-            item.setAttribute('aria-selected', String(selected));
-            item.tabIndex = selected ? 0 : -1;
-        });
-        renderCategory(category);
-        });
-
-        tab.addEventListener('keydown', event => {
-        if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
-        event.preventDefault();
-        const current = tabs.indexOf(tab);
-        const next = event.key === 'ArrowLeft' ? (current - 1 + tabs.length) % tabs.length
-            : event.key === 'ArrowRight' ? (current + 1) % tabs.length
-            : event.key === 'Home' ? 0 : tabs.length - 1;
-        tabs[next].focus();
-        tabs[next].click();
-        });
-    });
-
-    renderCategory('hot');
-</script>
+    <script src="./assets/js/app.js" defer></script>
 </body>
 </html>
