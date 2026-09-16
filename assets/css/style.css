@@ -163,21 +163,26 @@ a {
 .hero-banner {
   min-height: 95px;
   border-radius: 16px;
-  background: radial-gradient(circle at 80% 20%, #ffd26a 0 9%, transparent 10%),
-    linear-gradient(120deg, #174d37, #7b4b22 55%, #e5a54a);
+  /* background: radial-gradient(circle at 80% 20%, #ffd26a 0 9%, transparent 10%),
+    linear-gradient(120deg, #174d37, #7b4b22 55%, #e5a54a); */
   color: #fff;
-  padding: 16px 12px;
+  padding: 16px;
   position: relative;
   overflow: hidden;
 }
-.hero-banner:after {
+
+.hero-banner img {
+    width: 100%;
+    height: auto;
+}
+/* .hero-banner:after {
   content: "🎁";
   position: absolute;
   right: 12px;
   bottom: 2px;
   font-size: 68px;
   filter: drop-shadow(0 3px 2px #0005);
-}
+} */
 .hero-banner h1 {
   font-size: 17px;
   line-height: 1.05;
@@ -255,7 +260,7 @@ a {
   border-bottom: 2px solid transparent;
   text-decoration: none;
   font: inherit;
-  font-size: 10px;
+  font-size: 14px;
   color: #999;
   cursor: pointer;
 }
@@ -290,11 +295,11 @@ a {
   min-height: 67px;
 }
 .app-card .app-icon {
-  flex: 0 0 43px;
-  width: 43px;
-  height: 43px;
+  flex: 0 0 80px;
+  width: 80px;
+  height: 80px;
   margin: 0;
-  font-size: 11px;
+  font-size: 14px;
   border-width: 2px;
 }
 .app-info {
@@ -302,7 +307,7 @@ a {
   flex: 1;
 }
 .app-name {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 800;
   margin: 0;
 }
@@ -316,6 +321,7 @@ a {
   color: #0caa20;
   font-weight: 700;
 }
+
 .app-card .btn {
   background: #08a600;
   border-radius: 20px;
@@ -372,7 +378,7 @@ a {
   }
   .hero-banner {
     min-height: 150px;
-    padding: 25px;
+    /* padding: 25px; */
   }
   .hero-banner h1 {
     font-size: 24px;
@@ -391,12 +397,15 @@ a {
     min-height: 76px;
   }
   .app-name {
-    font-size: 13px;
+    font-size: 18px;
   }
   .app-sub,
   .recommend {
-    font-size: 10px;
+    font-size: 14px;
   }
+  .recommend {
+    margin: 0;
+    }
 }
 
     /* ========================================
