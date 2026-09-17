@@ -71,35 +71,5 @@
             </section>
         <footer class="footer">© 2026 Pixaposta Brasil · Conteúdo informativo · Jogue com responsabilidade</footer>
     </main>    <script src="./assets/js/app.js" defer></script>
-    <script>
-    (() => {
-      const form = document.getElementById('contactForm');
-      const status = document.getElementById('formStatus');
-
-      form.addEventListener('submit', (event) => {
-        status.textContent = '';
-
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          form.reportValidity();
-          return;
-        }
-
-        // Google reCAPTCHA v2 check. Remove this block if your backend
-        // uses a different CAPTCHA provider.
-        if (
-          typeof grecaptcha !== 'undefined' &&
-          document.querySelector('.g-recaptcha') &&
-          grecaptcha.getResponse() === ''
-        ) {
-          event.preventDefault();
-          status.textContent = 'Please complete the reCAPTCHA verification.';
-          return;
-        }
-
-        // The form is allowed to submit normally to the configured action URL.
-      });
-    })();
-  </script>
 </body>
 </html>
