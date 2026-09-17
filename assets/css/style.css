@@ -1309,7 +1309,7 @@ a {
           line-height: 1.05;
           font-weight: 900;
           text-transform: uppercase;
-          color: #168600;
+          color: var(--green);
           letter-spacing: -.5px;
           /* text-shadow: 0 1px 0 rgba(255, 255, 255, .8); */
           text-align: center;
@@ -1503,3 +1503,186 @@ a {
             }
         }
 
+/* =========================================
+   TOP 20 PERFORMERS
+========================================= */
+.page {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      padding: 18px 12px 28px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0 4px 12px;
+    }
+
+    .section-title {
+      margin: 0;
+      color: var(--green);
+      font-size: clamp(20px, 5vw, 30px);
+      line-height: 1.1;
+      font-weight: 900;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+
+    .section-subtitle {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .performers {
+      display: grid;
+      gap: 10px;
+    }
+
+    .performer-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: 58px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 10px;
+      min-height: 82px;
+      padding: 10px 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .performer-card:hover {
+      transform: translateY(-2px);
+      border-color: #bdbdbd;
+      box-shadow: 0 8px 22px rgba(0,0,0,.15);
+    }
+
+    .game-icon-wrap {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      /* border-radius: 14px; */
+      overflow: hidden;
+      /* background: linear-gradient(145deg, #173b12, #48bb28);
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,.3); */
+    }
+
+    .game-icon {
+      width: 52px;
+      height: 52px;
+      object-fit: cover;
+      border-radius: 11px;
+      display: block;
+    }
+
+    .game-info {
+      min-width: 0;
+    }
+
+    .game-info h2 {
+      margin: 1px 0 2px;
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 800;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .category {
+      margin: 0;
+      color: #777;
+      font-size: 11px;
+      line-height: 1.25;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin: 4px 0 0;
+      color: var(--orange);
+      font-size: 10px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .rating span:first-child {
+      letter-spacing: -1px;
+      font-size: 10px;
+    }
+
+    .rating span:last-child {
+      color: #6c6c6c;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: #ffcf00;
+      color: #6c4a00;
+      font-size: 8px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .play-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 94px;
+      min-height: 38px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #20b900, #0c9300);
+      color: #fff;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .04em;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 4px 9px rgba(20,150,0,.22);
+    }
+
+    .play-btn:hover { filter: brightness(1.06); }
+    .play-btn:focus-visible {
+      outline: 3px solid rgba(22,164,0,.28);
+      outline-offset: 2px;
+    }
+
+    @media (max-width: 430px) {
+      .page { padding: 12px 8px 20px; }
+      .performer-card {
+        grid-template-columns: 50px minmax(0, 1fr) auto;
+        gap: 8px;
+        min-height: 72px;
+        padding: 8px 9px;
+        border-radius: 15px;
+      }
+      .game-icon-wrap { width: 50px; height: 50px; border-radius: 12px; }
+      .game-icon { width: 45px; height: 45px; border-radius: 9px; }
+      .game-info h2 { font-size: 13px; }
+      .category { font-size: 10px; }
+      .rating { font-size: 9px; gap: 4px; }
+      .play-btn { min-width: 76px; min-height: 34px; font-size: 10px; padding: 7px 9px; }
+    }
+
+    @media (max-width: 330px) {
+      .performer-card { grid-template-columns: 46px minmax(0, 1fr); }
+      .play-btn { grid-column: 2; justify-self: start; min-width: 72px; margin-top: 4px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }

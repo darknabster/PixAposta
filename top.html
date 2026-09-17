@@ -23,7 +23,7 @@
     </script>
 </head>
 <body>
-    <main class="site" id="applist">
+    <main class="site" id="topperformers">
         <header>
             <div class="topbar">
             <a class="brand" href="index.html" aria-label="Pix Aposta Brasil">
@@ -40,25 +40,375 @@
             </nav>
             <nav class="nav" aria-label="Navegação principal">
             <a href="index.html"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg></span><span class="nav-label">Home</span></a>
-            <a href="applist.html" class="active" aria-current="page"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8h8l3 3v6H5v-6l3-3Z"/><path d="M9 13h.01M15 13h.01"/><path d="M12 8V5"/><path d="M8 5h8"/></svg></span><span class="nav-label">App List</span></a>
-            <a href="#top10"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0V4Z"/><path d="M8 6H4v2a4 4 0 0 0 4 4M16 6h4v2a4 4 0 0 1-4 4M12 13v4M8 21h8M10 17h4"/></svg></span><span class="nav-label">Top 50</span></a>
+            <a href="applist.html"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8h8l3 3v6H5v-6l3-3Z"/><path d="M9 13h.01M15 13h.01"/><path d="M12 8V5"/><path d="M8 5h8"/></svg></span><span class="nav-label">App List</span></a>
+            <a href="top.html" class="active" aria-current="page"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0V4Z"/><path d="M8 6H4v2a4 4 0 0 0 4 4M16 6h4v2a4 4 0 0 1-4 4M12 13v4M8 21h8M10 17h4"/></svg></span><span class="nav-label">Top 50</span></a>
             <a href="#contato"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span class="nav-label">Contact</span></a>
             <a href="#anuncios"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="m14 11 2-2 2 2-2 2-2-2Z"/><path d="m10 13-2 2-2-2 2-2 2 2Z"/><path d="m8 10 3 3"/><path d="m13 8 3 3"/><path d="M3 17h8M13 17h8"/></svg></span><span class="nav-label">Ads</span></a>
             </nav>
         </header>
-        <section aria-labelledby="ranking-heading" class="ranking-wrap">
-            <div class="ranking-header">
+        <section class="page">
+            <div class="section-header">
                 <div>
-                    <h1 class="ranking-title">Top Performers</h1>
-                    <p class="ranking-subtitle">Current platform ranking</p>
+                    <h1 class="section-title">Top Performers</h1>
+                    <p class="section-subtitle">Popular games and featured picks</p>
                 </div>
-                <span class="count" id="result-count">20 PLATFORMS</span>
             </div>
 
-            <div>
-                <h2 id="ranking-heading" class="sr-only">Platform rankings</h2>
-                <ol class="ranking-list" id="ranking-list"></ol>
-            </div>
+            <section class="performers" aria-label="Top performing games">
+
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/5BBB.png" alt="5BBB icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    <span class="badge">RANK 1</span>
+                    <h2>5BBB</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.9 · 3.8K reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 5BBB">Visit</a>
+                </article>
+
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/66AA.png" alt="66AA icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    <span class="badge">RANK 2</span>
+                    <h2>66AA</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 2.7K reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 66AA">Visit</a>
+                </article>
+            
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/76B.png" alt="76B icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    <span class="badge">RANK 3</span>
+                    <h2>76B</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 2.3K reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 76B">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/BB22.png" alt="BB22 icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>BB22</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 374 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit BB22">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/77BB.png" alt="77BB icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    <!-- <span class="badge">TOP</span> -->
+                    <h2>77BB</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 511 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 77BB">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/55UU.png" alt="55UU icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>55UU</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 648 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 55UU">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/XXX7.png" alt="XXX7 icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>XXX7</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 785 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit XXX7">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/77GG.png" alt="77GG icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>77GG</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 922 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 77GG">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/11CC.png" alt="11CC icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    <!-- <span class="badge">TOP</span> -->
+                    <h2>11CC</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 159 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 11CC">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/RR66.png" alt="RR66 icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>RR66</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 296 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit RR66">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/33CC.png" alt="33CC icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>33CC</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 433 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 33CC">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/XX11.png" alt="XX11 icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>XX11</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 570 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit XX11">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/33NN.png" alt="33NN icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>33NN</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 707 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 33NN">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/44WW.png" alt="44WW icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>44WW</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 844 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 44WW">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/55UU.png" alt="55UU icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>55UU</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 981 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 55UU">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/77SS.png" alt="77SS icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>77SS</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 218 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 77SS">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/EE44.png" alt="EE44 icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>EE44</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 355 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit EE44">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/7JJJ.png" alt="7JJJ icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>7JJJ</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 492 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 7JJJ">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/KK44.png" alt="KK44 icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>KK44</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 629 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit KK44">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/22CC.png" alt="22CC icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>22CC</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 766 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 22CC">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/99SS.png" alt="99SS icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>99SS</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 903 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit 99SS">Visit</a>
+                </article>
+                
+                <article class="performer-card">
+                    <div class="game-icon-wrap">
+                    <img class="game-icon" src="./assets/images/apps/WW33.png" alt="WW33 icon" width="48" height="48" loading="lazy" decoding="async">
+                    </div>
+                    <div class="game-info">
+                    
+                    <h2>WW33</h2>
+                    <p class="category">Popular Game</p>
+                    <p class="rating" aria-label="Rated 4.8 out of 5">
+                        <span aria-hidden="true">★★★★★</span>
+                        <span>4.8 · 140 reviews</span>
+                    </p>
+                    </div>
+                    <a class="play-btn" href="#" aria-label="Visit WW33">Visit</a>
+                </article>
+            
+            </section>
         </section>
         <section class="content" id="top10">
             <h2 id="about">Pixaposta Brasil</h2>
