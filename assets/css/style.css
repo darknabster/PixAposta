@@ -2005,3 +2005,23 @@ background: rgba(27, 139, 84, 0.31); filter: blur(10px);
   width: 58px; height: 58px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; border-radius: 16px; background: linear-gradient(135deg, #b9df39, #16a000); box-shadow: 0 10px 30px rgba(100, 70, 220, 0.3); font-size: 25px;
 } 
 /* ================================ CONTENT ================================= */ .contact-card h2 { position: relative; margin-bottom: 18px; font-size: 23px; line-height: 1.3; font-weight: 700; } .contact-card p { position: relative; margin-bottom: 17px; color: #b9bdca; font-size: 14px; } .contact-card p:last-of-type { margin-bottom: 25px; } /* ================================ EMAIL ================================= */ .email-box { position: relative; display: inline-flex; align-items: center; gap: 10px; max-width: 100%; padding: 12px 17px; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 10px; background: rgba(0, 0, 0, 0.2); } .email-label { color: #888e9f; font-size: 12px; font-weight: 600; } .email-box a { color: var(--green); font-size: 14px; font-weight: 700; text-decoration: none; word-break: break-word; transition: color 0.2s ease; } .email-box a:hover { color: #ffffff; text-decoration: underline; } /* ================================ FOOTER ================================= */ .contact-footer { margin-top: 40px; text-align: center; color: #73798a; font-size: 12px; } /* ================================ TABLET ================================= */ @media (max-width: 800px) { .contact-section { padding: 60px 18px; } .contact-grid { grid-template-columns: 1fr; max-width: 650px; margin: 0 auto; } .page-header { margin-bottom: 35px; } } /* ================================ MOBILE ================================= */ @media (max-width: 480px) { .contact-section { padding: 45px 14px; } .page-header h1 { font-size: 32px; } .page-header p { font-size: 13px; } .contact-card { padding: 26px 22px; border-radius: 18px; } .contact-card h2 { font-size: 20px; } .contact-card p { font-size: 13px; } .card-icon { width: 52px; height: 52px; font-size: 22px; } .email-box { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; } .email-box a { font-size: 13px; } } /* ================================ ACCESSIBILITY ================================= */ @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .contact-card { transition: none; } }
+
+/* ADS SECTION */
+@media (max-width: 480px) {
+    .ads-section {
+        padding: 16px;
+    }
+}
+/* @media (max-width: 800px) {
+    .ads-section {
+        padding: 60px 18px;
+    }
+} */
+.ads-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* padding: 80px 20px; */
+}
