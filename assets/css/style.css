@@ -2008,16 +2008,16 @@ background: rgba(27, 139, 84, 0.31); filter: blur(10px);
 
 /* ADS SECTION */
 @media (max-width: 480px) {
-    .ads-section {
+    .adv-section {
         padding: 16px;
     }
 }
 /* @media (max-width: 800px) {
-    .ads-section {
+    .adv-section {
         padding: 60px 18px;
     }
 } */
-.ads-section {
+.adv-section {
     width: 100%;
     min-height: 100vh;
     display: flex;
