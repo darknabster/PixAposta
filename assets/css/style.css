@@ -1978,7 +1978,7 @@ a {
     CONTATO
 ========================================= */
 /* ================================ MAIN CONTAINER ================================= */ 
-.contact-section { width: 100%; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 80px 20px; } 
+.contact-section { width: 100%; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 80px 20px; flex-direction: column; } 
 .contact-container { width: 100%; max-width: 1050px; margin: 0 auto; } 
 /* ================================ HEADER ================================= */ 
 .page-header { text-align: center; margin-bottom: 50px; } 
@@ -1986,7 +1986,7 @@ a {
 .page-header h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.15; font-weight: 800; margin-bottom: 15px; } 
 .page-header p { max-width: 700px; margin: 0 auto; color: #aeb3c2; font-size: 15px; } 
 /* ================================ CARDS ================================= */ 
-.contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px; } 
+.contact-grid { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 25px; } 
 .contact-card { position: relative; padding: 38px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 22px; background: rgba(255, 255, 255, 0.055); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25); overflow: hidden; transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; } 
 .contact-card::before { 
   content: ""; 
