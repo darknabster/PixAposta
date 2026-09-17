@@ -2095,7 +2095,7 @@ background: rgba(27, 139, 84, 0.31); filter: blur(10px);
 .tnc-hero p {
   max-width: 700px;
   margin: auto;
-  color: #bdb5c9;
+  color: #777;
   font-size: 1rem;
 } /* =========================================
 MAIN LAYOUT ========================================= */
@@ -2393,12 +2393,8 @@ footer strong {
     transform 0.25s ease;
 }
 .faq-item:hover {
-  border-color: rgba(166, 96, 255, 0.25);
-  background: linear-gradient(
-    135deg,
-    rgba(155, 80, 255, 0.075),
-    rgba(255, 255, 255, 0.018)
-  );
+  border-color: rgba(0, 100, 45, 0.20);
+    background: linear-gradient(135deg, rgba(0, 100, 45, 0.20), rgba(255, 255, 255, 0.018));
 }
 .faq-question {
   width: 100%;
@@ -2409,7 +2405,7 @@ footer strong {
   padding: 25px 28px;
   border: 0;
   background: transparent;
-  color: #ffffff;
+  color: var(--green);
   text-align: left;
   cursor: pointer;
   font-size: 1rem;
@@ -2433,9 +2429,9 @@ footer strong {
   width: 34px;
   height: 34px;
   border-radius: 10px;
-  background: rgba(150, 80, 255, 0.12);
-  border: 1px solid rgba(175, 110, 255, 0.2);
-  color: #c89cff;
+  background: rgba(0, 100, 45, 0.20);
+    border: 1px solid rgba(0, 100, 45, 0.20);
+  color: var(--green);
   font-size: 0.72rem;
   font-weight: 800;
 }
@@ -2448,14 +2444,14 @@ footer strong {
   height: 32px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.055);
-  color: #c59aff;
+  color: var(--green);
   font-size: 1.25rem;
   font-weight: 400;
   transition: transform 0.3s ease, background 0.3s ease;
 }
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
-  background: rgba(157, 83, 255, 0.18);
+  background: rgba(0, 100, 45, 0.20);
 }
 .faq-answer {
   display: grid;
@@ -2468,7 +2464,7 @@ footer strong {
 }
 .faq-answer-content {
   padding: 0 28px 26px 77px;
-  color: #aaa2b9;
+  color: #777;
   font-size: 0.94rem;
   line-height: 1.85;
 }
@@ -2497,22 +2493,23 @@ footer strong {
   margin-top: 30px;
   padding: 25px 28px;
   border-radius: 18px;
-  border: 1px solid rgba(190, 135, 255, 0.16);
-  background: linear-gradient(
-    135deg,
-    rgba(132, 66, 255, 0.09),
-    rgba(255, 255, 255, 0.025)
-  );
+  border: 1px solid rgba(0, 100, 45, 0.20);
+  margin-top: 30px;
+    padding: 25px 28px;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 100, 45, 0.20);
+    background: linear-gradient(135deg, rgba(0, 100, 45, 0.20), rgba(255, 255, 255, 0.025));
+    text-align: center;
   text-align: center;
 }
 .responsible-box strong {
   display: block;
   margin-bottom: 5px;
-  color: #ffffff;
+  color: var(--green);
   font-size: 0.92rem;
 }
 .responsible-box span {
-  color: #aaa0b8;
+  color: #777;
   font-size: 0.82rem;
 } 
 /* ========================= RESPONSIVE ========================= */
