@@ -2023,7 +2023,7 @@ background: rgba(27, 139, 84, 0.31); filter: blur(10px);
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    /* padding: 80px 20px; */
+    padding: 80px 20px;
 }
 .hsub {
   text-align: center;
