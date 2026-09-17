@@ -46,60 +46,8 @@
             <a href="ads.html" class="active" aria-current="page"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="m14 11 2-2 2 2-2 2-2-2Z"/><path d="m10 13-2 2-2-2 2-2 2 2Z"/><path d="m8 10 3 3"/><path d="m13 8 3 3"/><path d="M3 17h8M13 17h8"/></svg></span><span class="nav-label">Ads</span></a>
             </nav>
         </header>
-        <section class="ads-section"> 
-            <div class="contact-container"> 
-                
-                 <div class="contact-grid">
-                    <!-- Advertising --> 
-                     <article class="contact-card"> 
-                        <div class="card-icon" aria-hidden="true"> 📢 </div> 
-                        <h2>Consulta sobre Publicidade e Parcerias</h2> 
-                        <p> Se você é um agente de promoção, gerente de marketing, proprietário de um app ou representante de uma plataforma de jogos e está interessado em publicidade, cooperação promocional ou oportunidades de negócios com o Pixaposta.com, sinta-se à vontade para entrar em contato conosco. </p> 
-                        <p> Se você tiver alguma dúvida relacionada ao seu app, campanha promocional ou à sua listagem em nosso site, também pode entrar em contato conosco usando o endereço de e-mail abaixo. </p> 
-                         
-                        <div class="email-box"> 
-                            <span class="email-label">E-mail:</span> 
-                            <a href="mailto:pixaposta@gmail.com?subject=Consulta%20relacionada%20%C3%A0%20publicidade" aria-label="Enviar e-mail para publicidade do Pixaposta.com"> pixaposta@gmail.com </a> 
-                        </div> 
-
-                        <p> Inclua os detalhes relevantes em sua mensagem e aguarde algum tempo para que nossa equipe analise sua solicitação. Agradecemos sua paciência e responderemos o mais rápido possível.
- </p>
-                        <p>Obrigado por entrar em contato com o Pixaposta.com!</p>
-                    </article> 
-                    </div>
-                </div> 
-            </section>
         <footer class="footer">© 2026 Pixaposta Brasil · Conteúdo informativo · Jogue com responsabilidade</footer>
-    </main>    <script src="./assets/js/app.js" defer></script>
-    <script>
-    (() => {
-      const form = document.getElementById('contactForm');
-      const status = document.getElementById('formStatus');
-
-      form.addEventListener('submit', (event) => {
-        status.textContent = '';
-
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          form.reportValidity();
-          return;
-        }
-
-        // Google reCAPTCHA v2 check. Remove this block if your backend
-        // uses a different CAPTCHA provider.
-        if (
-          typeof grecaptcha !== 'undefined' &&
-          document.querySelector('.g-recaptcha') &&
-          grecaptcha.getResponse() === ''
-        ) {
-          event.preventDefault();
-          status.textContent = 'Please complete the reCAPTCHA verification.';
-          return;
-        }
-
-        // The form is allowed to submit normally to the configured action URL.
-      });
-    })();
-  </script>
+    </main>    
+    <script src="./assets/js/app.js" defer></script>
 </body>
 </html>

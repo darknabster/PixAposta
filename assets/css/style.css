@@ -1314,7 +1314,7 @@ a {
           letter-spacing: -.5px;
           /* text-shadow: 0 1px 0 rgba(255, 255, 255, .8); */
           text-align: center;
-          margin-top: 0;
+          margin-bottom: 4px;
         }
 
 
@@ -2024,4 +2024,291 @@ background: rgba(27, 139, 84, 0.31); filter: blur(10px);
     /* align-items: center; */
     justify-content: center;
     /* padding: 80px 20px; */
+}
+.hsub {
+  text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 0;
+    color: #16a000;
+}
+
+/* =========================================
+   TNC SECTION
+========================================= */
+/* ========================================= HERO ========================================= */
+.tnc-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 85px 20px 70px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.tnc-hero::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: rgba(0, 100, 45, 0.20);
+  border-radius: 50%;
+  filter: blur(90px);
+  top: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.tnc-hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(850px, 100%);
+  margin: auto;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #16a000;
+    border-radius: 999px;
+    background: #16a00036;
+  color: var(--green);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.tnc-hero h1 {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.15;
+  letter-spacing: -1.8px;
+  margin-bottom: 20px;
+  color: var(--green);
+}
+/* .tnc-hero h1 span {
+  background: linear-gradient(90deg, #ffffff, #b985ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+} */
+.tnc-hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #bdb5c9;
+  font-size: 1rem;
+} /* =========================================
+MAIN LAYOUT ========================================= */
+.page-layout {
+  width: min(1180px, calc(100% - 40px));
+  margin: 50px auto 80px;
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+} /* =========================================
+TABLE OF CONTENTS ========================================= */
+.toc {
+  position: sticky;
+  top: 100px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+}
+.toc-title {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  /* margin-bottom: 15px; */
+}
+.toc ol {
+  padding-left: 1.2rem;
+}
+.toc li {
+  margin-bottom: 8px;
+}
+.toc a {
+  color: #0787ff;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  transition: color 0.2s ease;
+}
+.toc a:hover {
+  color: #0787ff;
+} /* ========================================= CONTENT CARD ========================================= */
+.content-card {
+  padding: clamp(24px, 4vw, 50px);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.22);
+}
+.terms-section {
+  scroll-margin-top: 100px;
+  padding-bottom: 42px;
+  margin-bottom: 42px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+.terms-section:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.terms-section h2 {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 17px;
+  color: var(--green);
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  line-height: 1.35;
+}
+.terms-section h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 4px;
+  height: calc(100% - 10px);
+  border-radius: 5px;
+  background: linear-gradient(#b9df39, #16a000);
+}
+.terms-section p {
+  color: #c1bacb;
+  font-size: 0.92rem;
+  margin-bottom: 15px;
+}
+.terms-section p:last-child {
+  margin-bottom: 0;
+}
+.terms-section strong {
+  color: var(--green);
+}
+.terms-section a {
+  color: #0787ff;
+  font-weight: 600;
+  word-break: break-word;
+}
+.terms-section a:hover {
+  text-decoration: underline;
+}
+.terms-section ol {
+  margin: 12px 0 15px;
+}
+.terms-section li {
+  color: #c1bacb;
+  font-size: 0.92rem;
+  margin-bottom: 8px;
+  padding-left: 5px;
+}
+.highlight {
+  margin-top: 20px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: rgba(0, 100, 45, 0.20);
+    border: 1px solid #16a000;
+  color: var(--green);
+}
+.contact-box {
+  margin-top: 20px;
+  padding: 22px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.contact-box p {
+  margin-bottom: 7px;
+} /* ========================================= FOOTER =========================================
+*/
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 35px 20px;
+  text-align: center;
+  color: #8f8799;
+  font-size: 0.78rem;
+}
+footer strong {
+  color: #c7bfce;
+} /* ========================================= RESPONSIVE =========================================
+*/
+@media (max-width: 850px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .toc {
+    position: relative;
+    top: auto;
+  }
+  .toc ol {
+    columns: 2;
+    column-gap: 25px;
+  }
+  .toc li {
+    break-inside: avoid;
+  }
+}
+@media (max-width: 600px) {
+  .header-container {
+    width: min(100% - 24px, 1180px);
+    min-height: 64px;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .back-home {
+    padding: 8px 13px;
+    font-size: 0.72rem;
+  }
+  .tnc-hero {
+    padding: 25px 18px 35px;
+  }
+  .tnc-hero h1 {
+    letter-spacing: -1px;
+  }
+  .tnc-hero p {
+    font-size: 0.88rem;
+  }
+  .page-layout {
+    width: min(100% - 24px, 1180px);
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .toc {
+    padding: 19px;
+  }
+  .toc ol {
+    columns: 1;
+    margin: 0;
+  }
+  .content-card {
+    padding: 24px 19px;
+    border-radius: 18px;
+  }
+  .terms-section {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  .terms-section p,
+  .terms-section li {
+    font-size: 0.86rem;
+    line-height: 1.75;
+  }
+  .terms-section h2 {
+    font-size: 1.15rem;
+  }
+} /* ========================================= ACCESSIBILITY ========================================= */
+:focus-visible {
+  outline: 3px solid #c99dff;
+  outline-offset: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
 }
