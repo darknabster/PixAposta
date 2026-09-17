@@ -6,10 +6,11 @@
   --orange: #ff6b19;
   --ink: #242424;
   --muted: #666;
-  --bg: #f3f3f3;
+  --bg: #f4f4f4;
   --card: #fff;
   --line: #ddd;
   --radius: 14px;
+  --shadow:0 12px 30px rgba(0,0,0,.10);
 }
 * {
   box-sizing: border-box;
@@ -78,7 +79,7 @@ a {
 }
 .menu-panel {
   display: none;
-  background: #fff;
+  background: #031e03;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 4px 10px #0002;
   padding: 6px 10px;
@@ -91,8 +92,8 @@ a {
   align-items: center;
   gap: 9px;
   text-decoration: none;
-  color: #242424;
-  font-size: 18px;
+  color: #eaff3b;
+  font-size: 14px;
   font-weight: 600;
   padding: 10px 8px;
   border-radius: 8px;
@@ -280,7 +281,7 @@ a {
   padding: 24px 8px;
 }
 .list {
-  padding: 7px 8px;
+  padding: 16px;
 }
 .app-card {
   display: flex;
@@ -330,20 +331,20 @@ a {
     white-space: nowrap;
 }
 .content {
-  padding: 0 10px 20px;
+  padding: 16px 20px;
 }
 .content h2 {
   color: #12a300;
-  font-size: 15px;
+  font-size: 18px;
   margin: 10px 0 5px;
 }
 .content h3 {
-  font-size: 12px;
+  font-size: 15px;
   margin: 13px 0 4px;
 }
 .content p,
 .content li {
-  font-size: 10px;
+  font-size: 12px;
   color: #444;
 }
 .content ul {
@@ -857,7 +858,7 @@ a {
   }
 
   .stars {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .rank-1 .stars {
@@ -877,6 +878,15 @@ a {
   .rank-1 .rank-medal {
     width: 63px;
     height: 63px;
+  }
+}
+
+@media (max-width: 512px) {
+  .stars {
+      font-size: 14px;
+    }
+  .rank-1 .stars {
+      font-size: 18px;
   }
 }
 
@@ -1108,13 +1118,15 @@ a {
 @media (max-width: 768px) {
 
     .hero {
-        padding: 14px 12px 0;
+        padding: 14px 12px;
     }
 
     .hero-slider {
-        border-radius: 14px;
+        border-radius: 26px;
     }
-
+    .hero-slides {
+        aspect-ratio: 1200 / 600;
+    }
     .hero-arrow {
         width: 38px;
         height: 38px;
@@ -1145,15 +1157,15 @@ a {
 @media (max-width: 480px) {
 
     .hero {
-        padding: 10px 10px 0;
+        padding: 10px 10px;
     }
 
     .hero-slider {
-        border-radius: 10px;
+        border-radius: 26px;
     }
 
     .hero-slides {
-        aspect-ratio: 3 / 1;
+        aspect-ratio: 1200 / 600;
     }
 
     .hero-arrow {
@@ -1202,3 +1214,292 @@ a {
         transition: none;
     }
 }
+
+/* ========================================
+   NEW APP RIBBON
+======================================== */
+
+.app-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.new-ribbon {
+    position: absolute;
+
+    top: 12px;
+    right: -34px;
+
+    z-index: 10;
+
+    width: 115px;
+
+    padding: 6px 0;
+
+    background: #d71920;
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    transform: rotate(45deg);
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+
+    .new-ribbon {
+        top: 10px;
+        right: -37px;
+
+        width: 110px;
+
+        padding: 5px 0;
+
+        font-size: 11px;
+    }
+}
+
+/* =========================================
+           MAIN CONTAINER
+        ========================================= */
+
+        .gaming-platforms {
+            width: 100%;
+            max-width: 620px;
+            margin: 0 auto;
+            padding: 18px 14px 24px;
+            position: relative;
+            overflow: hidden;
+            background:var(--bg)
+        }
+        .gaming-platforms__intro {
+          background: white;
+          padding: 16px;
+          box-shadow: 0 4px 18px rgba(0, 0, 0, .08);
+          border-radius: 18px;
+        }
+
+
+
+        /* =========================================
+           HEADER
+        ========================================= */
+
+        .gaming-platforms__header {
+            position: relative;
+            z-index: 2;
+
+            text-align: center;
+
+            margin-bottom: 16px;
+            padding: 0 20px;
+        }
+
+        .gaming-platforms__title {
+          /* margin: 0; */
+          /* font-size: clamp(24px, 6vw, 36px); */
+          line-height: 1.05;
+          font-weight: 900;
+          text-transform: uppercase;
+          color: #168600;
+          letter-spacing: -.5px;
+          /* text-shadow: 0 1px 0 rgba(255, 255, 255, .8); */
+          text-align: center;
+          margin-top: 0;
+        }
+
+
+        /* =========================================
+           PLATFORM GRID
+        ========================================= */
+
+        .platform-grid {
+            position: relative;
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 14px 12px;
+
+            width: 100%;
+        }
+
+
+        /* =========================================
+           PLATFORM CARD
+        ========================================= */
+
+        .platform-card {
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            min-width: 0;
+
+            text-decoration: none;
+
+            color: #222;
+
+            transition:
+                transform .2s ease,
+                filter .2s ease;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.04);
+        }
+
+        .platform-card:focus-visible {
+            outline: 3px solid #168600;
+            outline-offset: 4px;
+            border-radius: 8px;
+        }
+
+
+        /* =========================================
+           PLATFORM IMAGE
+        ========================================= */
+
+        .platform-card__image-wrapper {
+            width: 100%;
+
+            aspect-ratio: 1 / 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            overflow: hidden;
+
+            border-radius: 11px;
+        }
+
+        .platform-card__image {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: contain;
+
+            border-radius: 10px;
+        }
+
+
+        /* =========================================
+           PLATFORM DOMAIN
+        ========================================= */
+
+        .platform-card__name {
+            display: block;
+
+            width: 100%;
+
+            margin-top: 4px;
+
+            text-align: center;
+
+            font-size: 14px;
+
+            line-height: 1.15;
+
+            font-weight: 600;
+
+            color: #222;
+
+            overflow-wrap: anywhere;
+        }
+
+
+        /* =========================================
+           TABLET
+        ========================================= */
+
+        @media (max-width: 600px) {
+
+            .gaming-platforms {
+                max-width: 100%;
+
+                padding:24px;
+            }
+
+            .gaming-platforms::before {
+                left: 22px;
+            }
+
+            .gaming-platforms::after {
+                right: 22px;
+            }
+
+            .platform-grid {
+                gap: 12px 10px;
+            }
+
+            .platform-card__name {
+                font-size: 14px;
+            }
+        }
+
+
+        /* =========================================
+           SMALL MOBILE
+        ========================================= */
+
+        @media (max-width: 380px) {
+
+            .gaming-platforms {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .gaming-platforms__header {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            .gaming-platforms__title {
+                font-size: 19px;
+            }
+
+            .platform-grid {
+                gap: 10px 8px;
+            }
+
+            .platform-card__name {
+                font-size: 8px;
+            }
+        }
+
+
+        /* =========================================
+           VERY SMALL DEVICES
+        ========================================= */
+
+        @media (max-width: 300px) {
+
+            .platform-grid {
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+
+                gap: 14px 10px;
+            }
+
+            .platform-card__name {
+                font-size: 9px;
+            }
+        }
+

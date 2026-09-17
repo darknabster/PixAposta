@@ -530,7 +530,13 @@ if (heroSlider) {
         }
 
         appList.innerHTML = apps.map(app => `
-            <article class="app-card">
+            <article class="app-card ${category === "new" ? "is-new" : ""}">
+
+                ${
+                    category === "new"
+                        ? `<span class="new-ribbon" aria-label="Novo aplicativo">Novo</span>`
+                        : ""
+                }
 
                 <div class="app-icon">
                     <img
@@ -603,3 +609,111 @@ if (heroSlider) {
     });
 
     renderCategory('hot');
+
+    const performers = [
+      { name: "5BBB", category: "Featured platform", score: "99% performance", logo: "./assets/images/apps/5BBB.png", url: "#" },
+      { name: "66AA", category: "Featured platform", score: "97% performance", logo: "./assets/images/apps/66AA.png", url: "#" },
+      { name: "76B", category: "Featured platform", score: "95% performance", logo: "./assets/images/apps/76B.png", url: "#" },
+      { name: "BB22", category: "Top performer", score: "93% performance", logo: "./assets/images/apps/BB22.png", url: "#" },
+      { name: "77B", category: "Top performer", score: "92% performance", logo: "./assets/images/apps/77B.png", url: "#" },
+      { name: "77BB", category: "Top performer", score: "91% performance", logo: "./assets/images/apps/77BB.png", url: "#" },
+      { name: "XXX7", category: "Top performer", score: "90% performance", logo: "./assets/images/apps/XXX7.png", url: "#" },
+      { name: "77GG", category: "Top performer", score: "89% performance", logo: "./assets/images/apps/77GG.png", url: "#" },
+      { name: "11CC", category: "Top performer", score: "88% performance", logo: "./assets/images/apps/11CC.png", url: "#" },
+      { name: "RR66", category: "Top performer", score: "87% performance", logo: "./assets/images/apps/RR66.png", url: "#" },
+      { name: "33CC", category: "Top performer", score: "86% performance", logo: "./assets/images/apps/33CC.png", url: "#" },
+      { name: "XX11", category: "Top performer", score: "85% performance", logo: "./assets/images/apps/XX11.png", url: "#" },
+      { name: "33NN", category: "Top performer", score: "84% performance", logo: "./assets/images/apps/33NN.png", url: "#" },
+      { name: "44WW", category: "Top performer", score: "83% performance", logo: "./assets/images/apps/44WW.png", url: "#" },
+      { name: "55UU", category: "Top performer", score: "82% performance", logo: "./assets/images/apps/55UU.png", url: "#" },
+      { name: "77SS", category: "Top performer", score: "81% performance", logo: "./assets/images/apps/77SS.png", url: "#" },
+      { name: "EE44", category: "Top performer", score: "80% performance", logo: "./assets/images/apps/EE44.png", url: "#" },
+      { name: "7JJJ", category: "Top performer", score: "79% performance", logo: "./assets/images/apps/7JJJ.png", url: "#" },
+      { name: "KK44", category: "Top performer", score: "78% performance", logo: "./assets/images/apps/KK44.png", url: "#" },
+      { name: "22CC", category: "Top performer", score: "77% performance", logo: "./assets/images/apps/22CC.png", url: "#" }
+    ];
+
+    const list = document.getElementById("ranking-list");
+    const count = document.getElementById("result-count");
+
+    const escapeHTML = (value) =>
+      String(value).replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+
+    function rankBadge(rank) {
+      if (rank === 1) return '<span class="rank-badge gold">Rank 1</span>';
+      if (rank === 2) return '<span class="rank-badge silver">Rank 2</span>';
+      if (rank === 3) return '<span class="rank-badge bronze">Rank 3</span>';
+      return "";
+    }
+
+    function renderRankings() {
+      list.innerHTML = performers.map((item, index) => {
+        const rank = index + 1;
+        const isTopThree = rank <= 3;
+        const rankClass = isTopThree ? `top-three rank-${rank}` : "regular";
+
+        return `
+          <article class="rank-card ${rankClass}" aria-label="Rank ${rank}: ${escapeHTML(item.name)}">
+            <div class="rank-left">
+              <span class="position-number" aria-hidden="true">${rank}</span>
+              <img
+                class="platform-logo"
+                src="${escapeHTML(item.logo)}"
+                alt="${escapeHTML(item.name)} logo"
+                width="${isTopThree ? 65 : 52}"
+                height="${isTopThree ? 65 : 52}"
+                loading="${rank <= 3 ? "eager" : "lazy"}"
+                decoding="async"
+                onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2265%22 height=%2265%22 viewBox=%220 0 65 65%22%3E%3Crect width=%2265%22 height=%2265%22 rx=%2212%22 fill=%22%23eef1ee%22/%3E%3Ctext x=%2250%25%22 y=%2253%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2218%22 font-family=%22Arial%22 fill=%22%23828a82%22%3E${rank}%3C/text%3E%3C/svg%3E';"
+              >
+            </div>
+
+            <div class="rank-info">
+              <h3 class="platform-name">${escapeHTML(item.name)}</h3>
+              <div class="category">${escapeHTML(item.category)}</div>
+              <div class="score">${escapeHTML(item.score)}</div>
+            </div>
+
+            <div class="rank-action">
+              ${rankBadge(rank)}
+              <a
+                class="visit-btn"
+                href="${escapeHTML(item.url)}"
+                aria-label="Visit ${escapeHTML(item.name)}"
+                rel="nofollow sponsored"
+              >Visit</a>
+            </div>
+          </article>
+        `;
+      }).join("");
+
+      count.textContent = `${performers.length} PLATFORMS`;
+    }
+
+    function addStructuredData() {
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Top Performing Platforms",
+        "description": "Ranked list of top-performing platforms.",
+        "numberOfItems": performers.length,
+        "itemListElement": performers.map((item, index) => ({
+          "@type": "ListItem",
+          "position": index + 1,
+          "name": item.name,
+          "url": item.url
+        }))
+      };
+
+      document.getElementById("ranking-schema").textContent =
+        JSON.stringify(schema);
+    }
+
+    renderRankings();
+    addStructuredData();
