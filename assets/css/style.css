@@ -1998,7 +1998,7 @@ border-radius: 50%;
 background: rgba(27, 139, 84, 0.31); filter: blur(10px);
 } 
 .contact-card:hover { 
-  transform: translateY(-6px); border-color: rgba(156, 123, 255, 0.45); box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+  transform: translateY(-6px); border-color: rgba(178, 253, 207, 0.45); box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
 } 
 /* ================================ ICON ================================= */ 
 .card-icon { 
