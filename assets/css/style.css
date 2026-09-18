@@ -313,12 +313,12 @@ a {
   font-weight: 800;
   margin: 0;
 }
-.app-sub {
+.recommend {
   font-size: 9px;
   color: #777;
   margin: 1px 0;
 }
-.recommend {
+.app-sub {
   font-size: 9px;
   color: #0caa20;
   font-weight: 700;
@@ -405,7 +405,7 @@ a {
   .recommend {
     font-size: 14px;
   }
-  .recommend {
+  .app-sub {
     margin: 0;
     }
 }
@@ -1276,7 +1276,7 @@ a {
             width: 100%;
             max-width: 620px;
             margin: 0 auto;
-            padding: 18px 14px 24px;
+            padding: 18px 24px 24px;
             position: relative;
             overflow: hidden;
             background:var(--bg)
@@ -1331,9 +1331,9 @@ a {
             grid-template-columns:
                 repeat(3, minmax(0, 1fr));
 
-            gap: 14px 12px;
-
-            width: 100%;
+            gap: 18px 16px;
+            width: 90%;
+            margin: 0 auto;
         }
 
 
@@ -1376,7 +1376,7 @@ a {
         ========================================= */
 
         .platform-card__image-wrapper {
-            width: 100%;
+            width: 80%;
 
             aspect-ratio: 1 / 1;
 

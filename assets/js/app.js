@@ -149,36 +149,36 @@ const categories = {
         {
             name: '73J',
             icon: './assets/images/apps/73J.png',
-            description: 'Bônus de até 7%',
-            sub: 'no depósito',
+            description: 'no depósito',
+            sub: 'Bônus de até 7%',
             url: 'https://73j.com'
         },
         {
             name: '23E',
             icon: './assets/images/apps/23E.png',
-            description: 'Bônus de 5%',
-            sub: 'no primeiro depósito',
+            description: 'no primeiro depósito',
+            sub: 'Bônus de 5%',
             url: 'https://23e.com'
         },
         {
             name: '23A',
             icon: './assets/images/apps/23A.png',
-            description: 'Bônus de 5%',
-            sub: 'no primeiro depósito',
+            description: 'no primeiro depósito',
+            sub: '777 extra',
             url: 'https://23a.com'
         },
         {
             name: 'NN22',
             icon: './assets/images/apps/NN22.png',
-            description: '777 extra',
-            sub: 'no primeiro depósito',
+            description: 'no primeiro depósito',
+            sub: 'Bônus de 5%',
             url: 'https://nn22.com'
         },
         {
             name: '76B',
             icon: './assets/images/apps/76B.png',
-            description: 'Bônus de 7%',
-            sub: 'no depósito',
+            description: 'no primeiro depósito',
+            sub: '777 extra',
             url: 'https://76b.com'
         }
     ],
