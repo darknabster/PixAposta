@@ -5,35 +5,35 @@ const categories = {
             icon: './assets/images/apps/5BBB.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://5bbb.com'
         },
         {
             name: 'BB22',
             icon: './assets/images/apps/BB22.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://bb22.com'
         },
         {
             name: '77BB',
             icon: './assets/images/apps/77BB.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://77bb.com'
         },
         {
             name: '66AA',
             icon: './assets/images/apps/66AA.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://66aa.com'
         },
         {
             name: 'XXX7',
             icon: './assets/images/apps/XXX7.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://xxx7.com'
         },
 
         {
@@ -41,35 +41,35 @@ const categories = {
             icon: './assets/images/apps/77GG.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://77gg.com'
         },
         {
             name: '11CC',
             icon: './assets/images/apps/11CC.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://11cc.com'
         },
         {
             name: 'RR66',
             icon: './assets/images/apps/RR66.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://rr66.com'
         },
         {
             name: '33CC',
             icon: './assets/images/apps/33CC.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://33cc.com'
         },
         {
             name: 'XX11',
             icon: './assets/images/apps/XX11.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://xx11.com'
         },
 
         {
@@ -77,35 +77,35 @@ const categories = {
             icon: './assets/images/apps/33NN.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://33nn.com'
         },
         {
             name: '44WW',
             icon: './assets/images/apps/44WW.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://44ww.com'
         },
         {
             name: '55UU',
             icon: './assets/images/apps/55UU.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://55uu.com'
         },
         {
             name: '77SS',
             icon: './assets/images/apps/77SS.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://77ss.com'
         },
         {
             name: 'EE44',
             icon: './assets/images/apps/EE44.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://ee44.com'
         },
 
         {
@@ -113,35 +113,35 @@ const categories = {
             icon: './assets/images/apps/7JJJ.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://7jjj.com'
         },
         {
             name: 'KK44',
             icon: './assets/images/apps/KK44.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://kk44.com'
         },
         {
             name: '22CC',
             icon: './assets/images/apps/22CC.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://22cc.com'
         },
         {
             name: '99SS',
             icon: './assets/images/apps/99SS.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://99ss.com'
         },
         {
             name: 'WW33',
             icon: './assets/images/apps/WW33.png',
             description: 'App recomendado',
             sub: 'Saque rápido',
-            url: '#contato'
+            url: 'https://ww33.com'
         }
     ],
 
@@ -151,35 +151,35 @@ const categories = {
             icon: './assets/images/apps/73J.png',
             description: 'Bônus de até 7%',
             sub: 'no depósito',
-            url: '#contato'
+            url: 'https://73j.com'
         },
         {
             name: '23E',
             icon: './assets/images/apps/23E.png',
             description: 'Bônus de 5%',
             sub: 'no primeiro depósito',
-            url: '#contato'
+            url: 'https://23e.com'
         },
         {
             name: '23A',
             icon: './assets/images/apps/23A.png',
             description: 'Bônus de 5%',
             sub: 'no primeiro depósito',
-            url: '#contato'
+            url: 'https://23a.com'
         },
         {
             name: 'NN22',
             icon: './assets/images/apps/NN22.png',
             description: '777 extra',
             sub: 'no primeiro depósito',
-            url: '#contato'
+            url: 'https://nn22.com'
         },
         {
             name: '76B',
             icon: './assets/images/apps/76B.png',
             description: 'Bônus de 7%',
             sub: 'no depósito',
-            url: '#contato'
+            url: 'https://76b.com'
         }
     ],
 
@@ -611,26 +611,26 @@ if (heroSlider) {
     renderCategory('hot');
 
     const performers = [
-      { name: "5BBB", category: "Featured platform", score: "99% performance", logo: "./assets/images/apps/5BBB.png", url: "#" },
-      { name: "66AA", category: "Featured platform", score: "97% performance", logo: "./assets/images/apps/66AA.png", url: "#" },
-      { name: "76B", category: "Featured platform", score: "95% performance", logo: "./assets/images/apps/76B.png", url: "#" },
-      { name: "BB22", category: "Top performer", score: "93% performance", logo: "./assets/images/apps/BB22.png", url: "#" },
-      { name: "77B", category: "Top performer", score: "92% performance", logo: "./assets/images/apps/77B.png", url: "#" },
-      { name: "77BB", category: "Top performer", score: "91% performance", logo: "./assets/images/apps/77BB.png", url: "#" },
-      { name: "XXX7", category: "Top performer", score: "90% performance", logo: "./assets/images/apps/XXX7.png", url: "#" },
-      { name: "77GG", category: "Top performer", score: "89% performance", logo: "./assets/images/apps/77GG.png", url: "#" },
-      { name: "11CC", category: "Top performer", score: "88% performance", logo: "./assets/images/apps/11CC.png", url: "#" },
-      { name: "RR66", category: "Top performer", score: "87% performance", logo: "./assets/images/apps/RR66.png", url: "#" },
-      { name: "33CC", category: "Top performer", score: "86% performance", logo: "./assets/images/apps/33CC.png", url: "#" },
-      { name: "XX11", category: "Top performer", score: "85% performance", logo: "./assets/images/apps/XX11.png", url: "#" },
-      { name: "33NN", category: "Top performer", score: "84% performance", logo: "./assets/images/apps/33NN.png", url: "#" },
-      { name: "44WW", category: "Top performer", score: "83% performance", logo: "./assets/images/apps/44WW.png", url: "#" },
-      { name: "55UU", category: "Top performer", score: "82% performance", logo: "./assets/images/apps/55UU.png", url: "#" },
-      { name: "77SS", category: "Top performer", score: "81% performance", logo: "./assets/images/apps/77SS.png", url: "#" },
-      { name: "EE44", category: "Top performer", score: "80% performance", logo: "./assets/images/apps/EE44.png", url: "#" },
-      { name: "7JJJ", category: "Top performer", score: "79% performance", logo: "./assets/images/apps/7JJJ.png", url: "#" },
-      { name: "KK44", category: "Top performer", score: "78% performance", logo: "./assets/images/apps/KK44.png", url: "#" },
-      { name: "22CC", category: "Top performer", score: "77% performance", logo: "./assets/images/apps/22CC.png", url: "#" }
+      { name: "5BBB", category: "Featured platform", score: "99% performance", logo: "./assets/images/apps/5BBB.png", url: "https://5bbb.com" },
+      { name: "66AA", category: "Featured platform", score: "97% performance", logo: "./assets/images/apps/66AA.png", url: "https://66aa.com" },
+      { name: "76B", category: "Featured platform", score: "95% performance", logo: "./assets/images/apps/76B.png", url: "https://76b.com" },
+      { name: "BB22", category: "Top performer", score: "93% performance", logo: "./assets/images/apps/BB22.png", url: "https://bb22.com" },
+      { name: "77B", category: "Top performer", score: "92% performance", logo: "./assets/images/apps/77B.png", url: "https://77b.com" },
+      { name: "77BB", category: "Top performer", score: "91% performance", logo: "./assets/images/apps/77BB.png", url: "https://77bb.com" },
+      { name: "XXX7", category: "Top performer", score: "90% performance", logo: "./assets/images/apps/XXX7.png", url: "https://xxx7.com" },
+      { name: "77GG", category: "Top performer", score: "89% performance", logo: "./assets/images/apps/77GG.png", url: "https://77gg.com" },
+      { name: "11CC", category: "Top performer", score: "88% performance", logo: "./assets/images/apps/11CC.png", url: "https://11cc.com" },
+      { name: "RR66", category: "Top performer", score: "87% performance", logo: "./assets/images/apps/RR66.png", url: "https://rr66.com" },
+      { name: "33CC", category: "Top performer", score: "86% performance", logo: "./assets/images/apps/33CC.png", url: "https://33cc.com" },
+      { name: "XX11", category: "Top performer", score: "85% performance", logo: "./assets/images/apps/XX11.png", url: "https://xx11.com" },
+      { name: "33NN", category: "Top performer", score: "84% performance", logo: "./assets/images/apps/33NN.png", url: "https://33nn.com" },
+      { name: "44WW", category: "Top performer", score: "83% performance", logo: "./assets/images/apps/44WW.png", url: "https://44ww.com" },
+      { name: "55UU", category: "Top performer", score: "82% performance", logo: "./assets/images/apps/55UU.png", url: "https://55uu.com" },
+      { name: "77SS", category: "Top performer", score: "81% performance", logo: "./assets/images/apps/77SS.png", url: "https://77ss.com" },
+      { name: "EE44", category: "Top performer", score: "80% performance", logo: "./assets/images/apps/EE44.png", url: "https://ee44.com" },
+      { name: "7JJJ", category: "Top performer", score: "79% performance", logo: "./assets/images/apps/7JJJ.png", url: "https://7jjj.com" },
+      { name: "KK44", category: "Top performer", score: "78% performance", logo: "./assets/images/apps/KK44.png", url: "https://kk44.com" },
+      { name: "22CC", category: "Top performer", score: "77% performance", logo: "./assets/images/apps/22CC.png", url: "https://22cc.com" }
     ];
 
     const list = document.getElementById("ranking-list");
